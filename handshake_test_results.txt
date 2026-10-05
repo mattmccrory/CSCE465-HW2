@@ -1,0 +1,17 @@
+pytest -v tests/test_handshake.py
+============================== test session starts ===============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /home/ubuntu/csce465-agentsec/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/ubuntu/csce465-agentsec/hw2
+collected 7 items                                                                
+
+tests/test_handshake.py::test_valid_handshake PASSED                       [ 14%]
+tests/test_handshake.py::test_changed_ciphertext_transcript_nonce PASSED   [ 28%]
+tests/test_handshake.py::test_changed_public_value PASSED                  [ 42%]
+tests/test_handshake.py::test_malformed_transcript PASSED                  [ 57%]
+tests/test_handshake.py::test_unexpected_identity PASSED                   [ 71%]
+tests/test_handshake.py::test_invalid_signature PASSED                     [ 85%]
+tests/test_handshake.py::test_reflected_handshake_message PASSED           [100%]
+
+=============================== 7 passed in 2.93s ================================
+

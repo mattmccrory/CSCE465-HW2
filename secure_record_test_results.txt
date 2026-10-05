@@ -1,0 +1,15 @@
+pytest -v tests/test_secure_record.py
+============================== test session starts ===============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /home/ubuntu/csce465-agentsec/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/ubuntu/csce465-agentsec/hw2
+collected 6 items                                                                
+
+tests/test_secure_record.py::test_valid_bidirectional_communication PASSED [ 16%]
+tests/test_secure_record.py::test_modified_ciphertext_is_rejected PASSED   [ 33%]
+tests/test_secure_record.py::test_modified_authenticated_header_is_rejected PASSED [ 50%]
+tests/test_secure_record.py::test_replayed_record_is_rejected PASSED       [ 66%]
+tests/test_secure_record.py::test_wrong_direction_record_is_rejected PASSED [ 83%]
+tests/test_secure_record.py::test_invalid_record_does_not_advance_sequence PASSED [100%]
+
+=============================== 6 passed in 0.06s ================================
